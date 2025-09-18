@@ -2,18 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+type Props = {
+    value: any;
+    onIncrement: () => void;
+    onDecrement: () => void;
+}
+
 // @ts-ignore
 function App({value, onIncrement, onDecrement}) {
 
-    type Prorps = {
-        value: number;
-        onIncrement: () => void;
-        onDecrement: () => void;
-    }
-
     return (
     <div className="App">
-      Clicked: {value} times
+      {/*Clicked: {value} times*/}
         <button onClick={onIncrement}>
             +
         </button>
